@@ -7,7 +7,15 @@
       "title": "Getting Started",
       "position": 0,
       "id": "1",
-      "children": []
+      "children": [
+        {
+          "type": "link",
+          "slug": "getting-started/new-doc",
+          "title": "New doc",
+          "id": "dj1n0u1nv",
+          "children": []
+        }
+      ]
     },
     {
       "type": "link",
