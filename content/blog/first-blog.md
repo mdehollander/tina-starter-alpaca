@@ -1,7 +1,7 @@
 ---
 date: '2020-06-05T00:00:00Z'
 author: Author
-title: Placeholder title
+title: Hello World
 description: Placeholder description
 ---
 > Id incididunt id non excepteur in.
