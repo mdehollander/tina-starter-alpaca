@@ -6,7 +6,8 @@ ARG GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
 ARG SIGNING_KEY=${SIGNING_KEY}
 ARG GTM_ID=${GTM_ID}
 
-COPY package.json yarn.lock ./
+COPY package.json ./
+RUN yarn cache clean
 RUN yarn install
 COPY . .
 RUN yarn build
