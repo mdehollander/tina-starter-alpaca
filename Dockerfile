@@ -6,14 +6,9 @@ ARG GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
 ARG SIGNING_KEY=${SIGNING_KEY}
 ARG GTM_ID=${GTM_ID}
 
-WORKDIR /app
-
-COPY . .
-
+COPY package.json yarn.lock ./
 RUN yarn install
-
+COPY . .
 RUN yarn build
-
 EXPOSE 3000
-
 CMD ["yarn", "start"]
